@@ -1,102 +1,347 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Bryllupside 1</title>
-
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="headerstyle.css">
-	<link rel="stylesheet" href="mediaqueries.css">
+	<title>Tonje Henriksen</title>
+	
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src='js/jquery.scrollto.js'></script>
 
 
 </head>
-<body class="home">
-
-	<!-- Header -->
-	<header class="default">
-		<a class="burger-nav"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
-
-		<div id="myNav" class="overlay">
-
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div>
-  	<nav>
-			<ul>
-				<li class="current-page"><a title="hjem" href="index.html">Hjem</a></li>
-				<li><a title="Forlovere" href="forlovere.html">Forlovere</a></li>
-				<li><a title="Timeplan" href="timeplan.html">Timeplan</a></li>
-				<li><a title="RSVP" href="rsvp.html">RSVP</a></li>
-				<li><a title="Gaver" href="gaver.html">Gaver</a></li>
-				<li><a title="Kontakt" href="kontakt.html">Kontakt</a></li>
-			</ul>
+<body>
+<div id="home" class="parallax">
+<nav role="custom-dropdown" id="nav-anchor">
+    <input type="checkbox" id="button">
+    <label for="button" onclick></label>
+		<ul>
+		<li><a href="#home">Hjem</a></li>
+		<li><a href="#ommeg">Om meg</a></li>
+		<li><a href="#portfolio">Portfolio</a></li>
+		<li><a href="#kontakt">Kontakt</a></li>
+	</ul>
 	</nav>
-  </div>
+	<div class="center">
+<h1 class="animated fadeInDown">TONJE HENRIKSEN</h1>
+<h2 class="animated fadeInUp delay-05s"><sub>Front-end utvikler // UX designer<sub></h2>
 </div>
 
-		<div class="header-box">		</div>
-		<h1>Sutha <em>&amp;</em> Kuma</h1>
-		<span class="ceremony-date">9. juni, 2017</span>
+<a href="#ommeg">
+<div class="animated fadeIn delay-1s losange center" >
+		 <i class="arrow down"></i>
+    </div></a>
+</div>
+<div id="ommeg">
+	<div class="headline">
+	<h2>Om meg</h3>
+	  <h3>UX designer og Front-end utvikler</h4></div>
+<div class="double">
 
-	</header>
-	<section id="countdown">			
-	 <div id="countdownContainer">
-		<div>
-			<span id="dager"></span>
-			<div class="smalltext">Dager</div>
-		</div>
-		<div>
-			<span id="timer"></span>
-			<div class="smalltext">Timer</div>
-		</div>
-		<div>
-			<span id="minutter"></span>
-			<div class="smalltext">Minutter</div>
-		</div>
-	 </div>
+  <section class="first-double">
+<img class="circular--square" src="meg.jpg" />
+
+</section>
+<section class="second-double">
+ 
+<div class="csslider infinity" id="slider1">
+
+  <input type="radio" name="slides" checked="checked" id="slides_1"/>
+  <input type="radio" name="slides" id="slides_2"/>
+
+ 
+  <ul>
+    <li class="scrollable">
+
+ <p>Jeg er en person som har en lidenskap for å utvikle brukervennlige og responsive webløsninger. Fra min IT-utdannelse fra Høgskolen i Oslo og Akershus og fra Universitetet i Oslo har jeg fått erfaring med å skreddersy løsninger for ulike målgrupper.</p>
+<p>
+Jeg har stor interesse for hele prosessen med tanke på å utvikle et nytt produkt eller forbedring av et produkt. Alt fra analyse til skissering, prototyping og koding. På Høgskolen i Oslo og Akershus fokuserte jeg mest på programmeringsfag, mens på Universitetet i Oslo fokuserte jeg på fag innen interaksjonsdesign. Her fikk jeg mye erfaring med å blant annet utvikle prototyper, både low- og high-fidelity. Vi har fokusert på alt fra rapid prototyping uten noen involvering av brukere, til deltagende design hvor brukerne har vært involverte i hele prosessen helt fra idéfasen til prosjektets slutt.</p>
+    </li>
+    <li>
+      <div id="center"> <b>UTVIKLINGSSPRÅK & RAMMEVERK:</b>
+	<ul class ="bulletin">
+		<li>HTML(5)</li>
+		<li>CSS(3)</li>
+		<li>SASS</li>
+		<li>PHP</li>
+		<li>JavaScript</li>
+		<li>MySQL</li>
+	</ul></div>
+	      <div id="center"> <b>METODIKK:</b>
+	<ul class ="bulletin">
+		<li>Prototyping</li>
+		<li>Brukertesting</li>
+		<li>Heuristisk evaluering,</li>
+		<li>Intervju</li>
+		<li>Brukersentrert design</li>
+		<li>Deltagende design</li>
+		<li>Workshop</li>
+		<li>Fokusgruppe</li>
+		<li>Observasjon,</li>
+		<li>Design thinking</li>
+	</ul></div>
+    </li>
+  </ul>
+
+  <div class="navigation"> 
+    <div>
+      <label for="slides_1"></label>
+      <label for="slides_2"></label>
+    </div>
+  </div>
+</div>
+</section>
+</div>
 
 
-	 <script type="text/javascript">
+</div>
+    <hr>
+<div id="portfolio">
 
-	function countdown(){
-		var now = new Date();
-		var eventDate = new Date(2017, 06, 09);
 
-		var currentTiime = now.getTime();
-		var eventTime = eventDate.getTime();
+	<div id="pageGaver">
+		<h2>Portfolio</h2>
 
-		var remTime = eventTime - currentTiime;
+		<p>Noe av det jeg har laget opp gjennom årene - noen rapporter samt noen prototyper (inkludert to youtube videoer) </p>
 
-		var s = Math.floor(remTime / 1000);
-		var m = Math.floor(s / 60);
-		var h = Math.floor(m / 60);
-		var d = Math.floor(h / 24);
-
-		h %= 24;
-		m %= 60;
-
-		h = (h < 10) ? "0" + h : h;
-		m = (m < 10) ? "0" + m : m;
-
-		document.getElementById ("dager").textContent = d;
-		document.getElementById ("dager").innerText = d;
-
-		document.getElementById ("timer").textContent = h;
-		document.getElementById ("minutter").textContent = m;
-
-		setTimeout(countdown, 1000);
-	
-		}
 		
-		countdown();
+		<div class="threeColumns">
+			<div class="threeColumnItem">
+						<div class="portfolio">
+				<div class="portfolio-wrapper">	
+				<a href="file:///C:/Users/Tonje/Desktop/Bryllupsider/Testsider/Side 1/index.html">			
+					<img src="img/skjermbildeBryllup.PNG" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bryllupside</a>
+							<span class="text-category">Personlig prosjekt</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+					</a>
+				</div>
+			</div>	
+		
+		</div>
+			<div class="threeColumnItem">
 
-	 </script>
+				<div class="portfolio" >
+				<div class="portfolio-wrapper">
+					<a href="pdf/INF5722 - Sluttrapport.pdf">			
+						<img src="img/skjermbildeINF5722.PNG" alt="" />
+						<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sluttrapport INF5722</a>
+							<span class="text-category">PDF</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+					</a>	
+				</div>
+			</div>	
 
-	</section>
+
+			
+		</div>
+			<div class="threeColumnItem">
+								<div class="portfolio" >
+				<div class="portfolio-wrapper">
+					<a href="pdf/UX-UiOKonsolidertdesigndokument.pdf">			
+						<img src="img/SkjermbildeUXuio.PNG" alt="" />
+						<div class="label">
+						<div class="label-text">
+							<a class="text-title">Designdokument INF5272</a>
+							<span class="text-category">PDF</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+					</a>	
+				</div>
+			</div>	
+			 
+		</div>
+
+		</div>
+
+		<div class="threeColumns">
+			<div class="threeColumnItem">
+						<div class="portfolio">
+				<div class="portfolio-wrapper">	
+				<a href="file:///C:/Users/Tonje/Desktop/Bryllupsider/Testsider/Side 1/index.html">			
+					<img src="img/skjermbildeBryllup.PNG" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bryllupside</a>
+							<span class="text-category">Personlig prosjekt</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+					</a>
+				</div>
+			</div>	
+		
+		</div>
+			<div class="threeColumnItem">
+
+				<div class="portfolio" >
+				<div class="portfolio-wrapper">
+					<a href="pdf/INF5722 - Sluttrapport.pdf">			
+						<img src="img/skjermbildeINF5722.PNG" alt="" />
+						<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sluttrapport INF5722</a>
+							<span class="text-category">PDF</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+					</a>	
+				</div>
+			</div>	
+
+
+			
+		</div>
+			<div class="threeColumnItem">
+								<div class="portfolio" >
+				<div class="portfolio-wrapper">
+					<a href="pdf/UX-UiOKonsolidertdesigndokument.pdf">			
+						<img src="img/SkjermbildeUXuio.PNG" alt="" />
+						<div class="label">
+						<div class="label-text">
+							<a class="text-title">Designdokument INF5272</a>
+							<span class="text-category">PDF</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+					</a>	
+				</div>
+			</div>	
+			 
+		</div>
+
+		</div>
+
+</div>
+<section id="kontakt">
+    <hr>
+
+<div class="kontaktmeg">
+		<div class="kontakt">
+				<div class="headline">
+		<h2>Kontakt meg</h2>
+		<h3>Jeg er ledig for oppdrag!</h3>
+	</div>
+<div class="page-wrap">      
+        <form id="form" class="form" action="#" method="get">
+	<div class="input-group">
+			<label> Navn </label>
+	<input type="text" placeholder="Navn..">
+	</div>
 	
+	<div class="input-group">
+			<label>E-post</label>
+	<input type="email" placeholder="E-post*.." required >
+
+	</div>
 	
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/menu.js"></script>
-	<script src="js/nedtelling.js"></script>
+	<div class="input-group">
+		      <label>Beskjed</label>
+      <textarea rows="8" cols="60" placeholder="Beskjed..."></textarea>
+
+	</div>
+	
+            <input class="button" type="submit" value="Send" id="submit"/>
+        </form>
+		</div>
+		</div>
+
+
+</div>
+</section>
+<footer>
+	<div id="social">
+<h5>Følg meg på sosiale medier:</h5>
+		<a href="https://www.facebook.com/tonjehen" title="Facebook"><i class="fa fa-facebook" aria-hidden="true" alt="facebook"></i></a>
+		<a href="https://www.instagram.com/tonjehen_/" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="https://www.linkedin.com/in/tonje-henriksen-66b33b147/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true">	</i></a>
+		<a href="https://www.github.com/tonjhenr" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+	</div>
+	<!-- <div id="copyright"> &copy; 2017 </div> -->
+</footer>
+
+<script>
+        $(document).ready(function(){
+        
+        /** 
+         * This part does the "fixed navigation after scroll" functionality
+         * We use the jQuery function scroll() to recalculate our variables as the 
+         * page is scrolled/
+         */
+        $(window).scroll(function(){
+            var window_top = $(window).scrollTop(); 
+            var div_top = $('#nav-anchor').offset().top;
+                if (window_top > div_top) {
+                    $('nav').addClass('stick');
+                } else {
+                    $('nav').removeClass('stick');
+                }
+        });
+
+        /**
+         * This part causes smooth scrolling using scrollto.js
+         * We target all a tags inside the nav, and apply the scrollto.js to it.
+         */
+        $("nav a").click(function(evn){
+            evn.preventDefault();
+            $('html,body').scrollTo(this.hash, this.hash); 
+        });
+        
+        
+        
+        /**
+         * This part handles the highlighting functionality.
+         * We use the scroll functionality again, some array creation and 
+         * manipulation, class adding and class removing, and conditional testing
+         */
+        var aChildren = $("nav li").children(); // find the a children of the list items
+        var aArray = []; // create the empty aArray
+        for (var i=0; i < aChildren.length; i++) {    
+            var aChild = aChildren[i];
+            var ahref = $(aChild).attr('href');
+            aArray.push(ahref);
+        } // this for loop fills the aArray with attribute href values
+        
+        $(window).scroll(function(){
+            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+            var windowHeight = $(window).height(); // get the height of the window
+            var docHeight = $(document).height();
+            
+            for (var i=0; i < aArray.length; i++) {
+                var theID = aArray[i];
+                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+                var divHeight = $(theID).height(); // get the height of the div in question
+                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                    $("a[href='" + theID + "']").addClass("nav-active");
+                } else {
+                    $("a[href='" + theID + "']").removeClass("nav-active");
+                }
+            }
+            
+            if(windowPos + windowHeight == docHeight) {
+                if (!$("nav li:last-child a").hasClass("nav-active")) {
+                    var navActiveCurrent = $(".nav-active").attr("href");
+                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+                    $("nav li:last-child a").addClass("nav-active");
+                }
+            }
+        });
+    });
+
+        
+    
+</script>
+
 </body>
 </html>
